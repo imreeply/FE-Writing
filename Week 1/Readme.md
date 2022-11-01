@@ -91,7 +91,7 @@ const Card = (name) => {
   - Updating yaitu fase ketika sebuah component akan dirender ulang.
   - Unmounting yaitu fase ketika component dihapus dari DOM.
 
-###React - Hooks
+### React - Hooks
 
 - React Hooks digunakan untuk melakukan state management dan side effect didalam function component, dengan Hooks kita dapat menggunakan state dan lifecycle method tanpa harus menuliskan class di React.
 
