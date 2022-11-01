@@ -5,7 +5,7 @@
 ## Cara Install ReactJS
 
 - Sebelum menginstall React diproject, kita harus menginstall node di nodejs.org/ agar dapat menggukkan `node`
-- Setelah menginstall node, cek node apakah sudah benar terinstall dengan cara `npm -v`
+- Setelah menginstall node, cek node apakah sudah benar terinstall dengan cara `node -v`
 - Ada 2 cara dalam menginstall React pada project
   - `npm install -g create-react-app` cara biasa
   - `npm create vite@latest my-react-app --template react` menggunakan ViteJS
