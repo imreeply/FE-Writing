@@ -2,7 +2,7 @@
 
 - React adalah sebuah library JavaScript yang digunakan untuk membangun user interface yang interaktif. Library ini dibuat oleh Facebook dan bersifat open source. Library ini sangat populer digunakan dan selalu dikembangkan baik oleh kontributor utama ataupun komunitas.
 
-###Cara Install ReactJS
+## Cara Install ReactJS
 
 - Sebelum menginstall React diproject, kita harus menginstall node di nodejs.org/ agar dapat menggukkan `node`
 - Setelah menginstall node, cek node apakah sudah benar terinstall dengan cara `npm -v`
