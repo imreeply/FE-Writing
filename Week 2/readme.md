@@ -1,6 +1,6 @@
-#WEEK 2 Writting - Front-End
+# WEEK 2 Writting - Front-End
 
-##Prop-Types
+## Prop-Types
 
 - PropTypes adalah sebuah library yang berguna untuk memvalidasi sebuah props. PropTypes sangat berguna untuk meminimalisir bug saat pengembangan sebuah aplikasi, Jika props salah maka akan muncul sebuah warning.
 
