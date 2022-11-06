@@ -64,7 +64,7 @@ const App = () => {
 
         <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path='/about' element={AboutPage />} />
+            <Route path='/about' element={<AboutPage />} />
         </Routes>
 
         </>
@@ -72,31 +72,23 @@ const App = () => {
 }
 ```
 
-> File : App.jsx
+> Penggunaan Dasar Routing
 
 ```js
-const HomePage = () => {
-  return (
-    <>
-      <h1>Ini HomePage</h1>
-    </>
-  );
-};
+<Route path="/detail/:id" element={<DetailPage />} />
 ```
 
-> File : HomePage.jsx
+> Dynamic Routing memungkinkan kita mengakses beberapa halaman berbeda sesuai dengan parameter yang diinginkan dalam satu file saja.
 
 ```js
-const AboutPage = () => {
-  return (
-    <>
-      <h1>Ini AboutPage</h1>
-    </>
-  );
-};
+<Route path="/about" element={<AboutPage />}>
+  <Route path="/about/student" element={<AboutStudent />} />
+  <Route path="/about/teacher" element={<AboutTeacher />} />
+  <Route index element={<AboutSchool />} />
+</Route>
 ```
 
-> File : AboutPage.jsx
+> Nested Routing dapat menampilkan views lain secara bercabang. Dimana ada views induk, dan views anak.
 
 ### Outlet
 
@@ -134,8 +126,16 @@ const AboutPage = () => {
 - Redux Thunk adalah middleware yang memungkinkan Anda memanggil pembuat aksi yang mengembalikan fungsi sebagai ganti objek aksi. Fungsi itu menerima metode pengiriman penyimpanan, yang kemudian digunakan untuk mengirim async di dalam isi fungsi setelah operasi asinkron selesai.
 
 - Cara install thunk : `npm install thunk`
-- Letakkan `applyMiddleware(thunk)` pada store
+- Import applyMiddleware di index.js
+
+```js
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
+```
 
 ### Axios
 
-- Axios merupakan library yang digunakan untuk request data melalui http. `npm i axios`
+- Axios merupakan library yang digunakan untuk request data melalui http.
+- Cara install Axios : `npm install axios`
